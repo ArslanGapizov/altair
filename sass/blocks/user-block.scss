@@ -1,0 +1,18 @@
+.user-block{
+  height: 34px;
+  margin-left: 10px;
+}
+.user-block__mail{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 34px;
+  height: 34px;
+  border: 2px solid #353e45;
+  border-radius: 50%;
+}
+.user-block__mail svg{
+  width: 20px;
+  height: 20px;
+  fill: #353e45;
+}

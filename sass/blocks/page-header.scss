@@ -1,0 +1,14 @@
+.page-header__wrapper{
+  @include container;
+  display: flex;
+  align-items: flex-start;
+  min-height: 80px;
+}
+.page-header__logo{
+  margin-right: auto;
+  margin-top: 20px;
+}
+.page-header__nav{
+  display: flex;
+  margin-top: 26px;
+}
