@@ -1,0 +1,155 @@
+.diagram{
+  position: relative;
+  min-height: 350px;
+  margin-top: -148px;
+}
+.diagram__item{
+  position: absolute;
+  display: block;
+  border-radius: 50%;
+  background-color: #3f3b48;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+  &_start,
+  &_other{
+    width: 32px;
+    height: 32px;
+  }
+  &_happy-clients,
+  &_best-shots{
+    width: 112px;
+    height: 112px;
+    line-height: 112px;
+    font-size: 38px;
+  }
+  &_completed-projects{
+    width: 82px;
+    height: 82px;
+    line-height: 82px;
+    font-size: 26px;
+  }
+  &_coffees-made{
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    font-size: 20px;
+  }
+  &_winning-awards{
+    width: 190px;
+    height: 190px;
+    line-height: 190px;
+    font-size: 72px;
+  }
+  &_start{
+    top: 268px;
+    left: 40px;
+  }
+  &_happy-clients{
+    left: 150px;
+    top: 148px;
+    &::before{
+      position: absolute;
+      top: 65%;
+      left: -100px;
+      transform: rotate(-30deg);
+      transform-origin: right;
+      content: '';
+      display: block;
+      height: 2px;
+      width: 116px;
+      background-color: #3f3b48;
+    }
+  }
+  &_completed-projects{
+    top: 230px;
+    left: 345px;
+    &::before{
+      position: absolute;
+      top: 40%;
+      left: -100px;
+      transform: rotate(20deg);
+      transform-origin: right;
+      content: '';
+      display: block;
+      height: 2px;
+      width: 116px;
+      background-color: #3f3b48;
+    }
+  }
+  &_best-shots{
+    left: 460px;
+    top: 110px;
+    &::before{
+      position: absolute;
+      top: 60%;
+      left: -70px;
+      transform: rotate(-45deg);
+      transform-origin: right;
+      content: '';
+      display: block;
+      height: 2px;
+      width: 108px;
+      background-color: #3f3b48;
+    }
+  }
+  &_other{
+    top: 60px;
+    left: 420px;
+    &::before{
+      position: absolute;
+      top: 50%;
+      right: -60px;
+      transform: rotate(45deg);
+      transform-origin: left;
+      content: '';
+      display: block;
+      height: 2px;
+      width: 76px;
+      background-color: #3f3b48;
+    }
+  }
+  &_coffees-made{
+    top: 2px;
+    left: 615px;
+    &::before{
+      position: absolute;
+      top: 55%;
+      left: -100px;
+      transform: rotate(-45deg);
+      transform-origin: right;
+      content: '';
+      display: block;
+      height: 2px;
+      width: 120px;
+      background-color: #3f3b48;
+    }
+  }
+  &_winning-awards{
+    left: 725px;
+    top: 70px;
+    &::before{
+      position: absolute;
+      top: 50%;
+      left: -155px;
+      content: '';
+      display: block;
+      height: 2px;
+      width: 155px;
+      background-color: #3f3b48;
+    }
+  }
+}
+.diagram__text{
+    position: absolute;
+    bottom: -35px;
+    left: 50%;
+    line-height: 25px;
+    transform: translate(-50%);
+    white-space: nowrap;
+    display: block;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #3f3b48;
+}
