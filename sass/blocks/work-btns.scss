@@ -35,10 +35,10 @@
   background-repeat: no-repeat;
   &_previous{
     background-size: 160px 44px;
-    background-image: url("../img/bg-pagginator-btns.svg#svgView(viewBox(0,0,160,44))");
+    background-image: url("../img/bg-pagginator-left.svg");
   }
   &_next{
-    background-size: 160px 88px;
-    background-image: url("../img/bg-pagginator-btns.svg#svgView(viewBox(0,44,160,88))");
+    background-size: 160px 44px;
+    background-image: url("../img/bg-pagginator-right.svg");
   }
 }

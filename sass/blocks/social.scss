@@ -11,9 +11,20 @@
   border: 2px solid #fff;
   border-radius: 50%;
   font-size: 0;
+  transition: 0.3s;
+  &:hover{
+    border-color: #635f6d;
+    svg{
+      fill: #635f6d;
+    }
+  }
+  &:active{
+    opacity: 0.3;
+  }
 }
 .social__icon{
   height: 14px;
   width: 14px;
   fill: #fff;
+  transition: 0.3s;
 }

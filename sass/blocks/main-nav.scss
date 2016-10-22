@@ -11,6 +11,15 @@
   justify-content: space-around;
   width: 440px;
 }
+.main-nav__link{
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  color: #a0a0a0;
+  text-transform: uppercase;
+  transition: 0.3s;
+}
 .main-nav__item{
   display: block;
   margin: 0;
@@ -19,12 +28,10 @@
   &_active a{
     color: #303941;
   }
-}
-.main-nav__link{
-  text-decoration: none;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 700;
-  font-size: 14px;
-  color: #a0a0a0;
-  text-transform: uppercase;
+  &:hover a{
+    color: #f00;
+  }
+  &:active a{
+    opacity: 0.3;
+  }
 }

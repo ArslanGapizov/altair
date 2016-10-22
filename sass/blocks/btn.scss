@@ -3,6 +3,7 @@
   width: 100%;
   text-align: center;
   border-radius: 5px;
+  transition: 0.3s;
   &_advantages{
     height: 41px;
     font-family: 'Montserrat', sans-serif;
@@ -12,5 +13,11 @@
     text-transform: uppercase;
     line-height: 41px;
     background-color: #f00;
+  }
+  &:hover{
+    box-shadow: 0px 100px 0 0 rgba(0,0,0,0.2) inset;
+  }
+  &:active{
+    box-shadow: 0px 5px 5px 0 rgba(0,0,0,0.2) inset;
   }
 }

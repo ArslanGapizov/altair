@@ -1,3 +1,6 @@
+.page-header{
+  min-width: $screenWidth;
+}
 .page-header__wrapper{
   @include container;
   display: flex;
