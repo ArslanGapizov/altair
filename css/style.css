@@ -410,6 +410,15 @@ body {
   justify-content: space-around;
   width: 440px; }
 
+.main-nav__link {
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  color: #a0a0a0;
+  text-transform: uppercase;
+  transition: 0.3s; }
+
 .main-nav__item {
   display: block;
   margin: 0;
@@ -417,14 +426,10 @@ body {
   line-height: 34px; }
   .main-nav__item_active a {
     color: #303941; }
-
-.main-nav__link {
-  text-decoration: none;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 700;
-  font-size: 14px;
-  color: #a0a0a0;
-  text-transform: uppercase; }
+  .main-nav__item:hover a {
+    color: #f00; }
+  .main-nav__item:active a {
+    opacity: 0.3; }
 
 .user-block {
   height: 34px;
@@ -437,7 +442,14 @@ body {
   width: 34px;
   height: 34px;
   border: 2px solid #353e45;
-  border-radius: 50%; }
+  border-radius: 50%;
+  transition: 0.3s; }
+  .user-block__mail:hover {
+    border-color: #f00; }
+    .user-block__mail:hover svg {
+      fill: #f00; }
+  .user-block__mail:active {
+    opacity: 0.3; }
 
 .user-block__mail svg {
   width: 20px;
@@ -577,7 +589,8 @@ body {
   font-size: 14px;
   color: #fff;
   text-transform: uppercase;
-  padding-right: 15px; }
+  padding-right: 15px;
+  transition: 0.3s; }
   .work__gallery-link::after {
     content: '';
     display: block;
@@ -589,7 +602,16 @@ body {
     border: 3px solid #fff;
     border-left-color: transparent;
     border-bottom-color: transparent;
-    transform: rotate(45deg); }
+    transform: rotate(45deg);
+    transition: 0.3s; }
+  .work__gallery-link:hover {
+    color: #f00; }
+    .work__gallery-link:hover:after {
+      border-color: #f00;
+      border-left-color: transparent;
+      border-bottom-color: transparent; }
+  .work__gallery-link:active {
+    opacity: 0.3; }
 
 .work-btns {
   display: flex;
@@ -681,7 +703,8 @@ body {
   display: inline-block;
   width: 100%;
   text-align: center;
-  border-radius: 5px; }
+  border-radius: 5px;
+  transition: 0.3s; }
   .btn_advantages {
     height: 41px;
     font-family: 'Montserrat', sans-serif;
@@ -691,6 +714,10 @@ body {
     text-transform: uppercase;
     line-height: 41px;
     background-color: #f00; }
+  .btn:hover {
+    box-shadow: 0px 100px 0 0 rgba(0, 0, 0, 0.2) inset; }
+  .btn:active {
+    box-shadow: 0px 5px 5px 0 rgba(0, 0, 0, 0.2) inset; }
 
 .blog {
   position: relative;
@@ -794,13 +821,22 @@ body {
   margin-top: auto;
   font-size: 12px;
   color: #fff;
-  text-decoration: none; }
+  text-decoration: none;
+  transition: 0.3s; }
+  .post__link:hover {
+    color: #3f3b48; }
+    .post__link:hover svg {
+      fill: #3f3b48; }
+  .post__link:active {
+    opacity: 0.3; }
 
 .post__icon-link {
   display: inline-block;
   height: 20px;
   width: 20px;
-  margin-right: 8px; }
+  margin-right: 8px;
+  fill: #fff;
+  transition: 0.3s; }
 
 .scroll {
   position: relative;
@@ -1020,9 +1056,17 @@ body {
   width: 33px;
   border: 2px solid #fff;
   border-radius: 50%;
-  font-size: 0; }
+  font-size: 0;
+  transition: 0.3s; }
+  .social__item:hover {
+    border-color: #635f6d; }
+    .social__item:hover svg {
+      fill: #635f6d; }
+  .social__item:active {
+    opacity: 0.3; }
 
 .social__icon {
   height: 14px;
   width: 14px;
-  fill: #fff; }
+  fill: #fff;
+  transition: 0.3s; }
