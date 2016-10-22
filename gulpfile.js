@@ -32,10 +32,10 @@ gulp.task("style", function() {
        sort: false
      })
    ]))
-   .pipe(gulp.dest("css"))/*build*/
+   .pipe(gulp.dest("build/css"))/*build*/
    .pipe(minify())
    .pipe(rename("style.min.css"))
-   .pipe(gulp.dest("css"))/*build*/
+   .pipe(gulp.dest("build/css"))/*build*/
    .pipe(server.reload({stream: true}));
 });
 
@@ -60,7 +60,7 @@ gulp.task("symbols", function() {
 
 gulp.task("serve",["style"], function() {
    server.init({
-       server: "."/*build*/
+       server: "build"/*build*/
    });
 
     gulp.watch("sass/**/*.scss", ["style"]);
