@@ -376,6 +376,9 @@ body {
   font-style: normal;
   font-weight: 400; }
 
+.page-header {
+  min-width: 940px; }
+
 .page-header__wrapper {
   width: 940px;
   margin: 0 auto;
@@ -390,6 +393,9 @@ body {
 .page-header__nav {
   display: flex;
   margin-top: 26px; }
+
+.page-main {
+  min-width: 940px; }
 
 .main-nav {
   display: flex;
@@ -988,6 +994,7 @@ body {
   color: #3f3b48; }
 
 .page-footer {
+  min-width: 940px;
   background-color: #3f3b48;
   font-family: 'Myriad Pro', sans-serif;
   font-weight: 400;
